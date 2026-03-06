@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6e282708532bb210470af7e0a0490ebc" label="Person in charge" max_length="40" name="x_1936206_audit_0_person_in_charge" type="collection">
+        <element label="audit" max_length="32" name="audit" reference="x_1936206_audit_0_audit" type="reference"/>
+        <element label="role" max_length="32" name="role" reference="sys_user_role" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="login" max_length="40" name="login" type="string"/>
+        <index name="index">
+            <element name="audit"/>
+        </index>
+        <index name="index2">
+            <element name="role"/>
+        </index>
+    </element>
+</database>
