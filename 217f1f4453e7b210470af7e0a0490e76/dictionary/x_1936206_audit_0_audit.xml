@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="99b1ab8853e7b210470af7e0a0490e96" label="audit" max_length="40" name="x_1936206_audit_0_audit" type="collection">
+        <element label="Title" max_length="40" name="title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Provisional" sequence="0" value="provisional"/>
+                <element inactive_on_update="false" label="Ongoing" sequence="1" value="ongoing"/>
+                <element inactive_on_update="false" label="Finalised" sequence="2" value="finalised"/>
+            </choice>
+        </element>
+        <element label="Year" max_length="40" name="year" type="glide_date"/>
+        <element choice="3" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Expenditure Verification" sequence="0" value="expenditure_verification"/>
+                <element inactive_on_update="false" label="Systems audit" sequence="1" value="systems_audit"/>
+            </choice>
+        </element>
+    </element>
+</database>
