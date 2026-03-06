@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="acl00001532bb210470af7e0a0490e00" label="Audited Contract Link" max_length="40" name="x_1936206_audit_0_audited_contract_link" type="collection">
+        <element label="Audit" max_length="32" name="audit" reference="x_1936206_audit_0_audit" type="reference"/>
+        <element label="CRIS Contract ID" max_length="40" name="cris_contract_id" type="integer"/>
+        <element label="OPSYS Contract ID" max_length="40" name="opsys_contract_id" type="integer"/>
+        <element label="Legal Commitment ABAC Key" max_length="100" name="legal_commitment_abac_key" type="string"/>
+    </element>
+</database>
